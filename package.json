@@ -1,0 +1,19 @@
+{
+  "name": "hackatrain",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:luvdasun/hackatrain.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.12.2",
+    "less": "~2.4.0"
+  }
+}
