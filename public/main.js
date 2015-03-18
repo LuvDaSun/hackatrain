@@ -1,4 +1,11 @@
-window.document.addEventListener('scroll', function(e) {
-    //document.getElementById('train').style.transform = 'translate3d(0,' + e.target.body.scrollTop + 'px,0)';
-    document.getElementById('train').style.top = (e.target.body.scrollTop - 150) + 'px';
+window.addEventListener('load', function() {
+    var trainElement = document.getElementById('train');
+    var animationFrame;
+    window.addEventListener('scroll', function(e) {
+        window.cancelAnimationFrame(animationFrame);
+        animationFrame = window.requestAnimationFrame(function() {
+            //document.getElementById('train').style.transform = 'translate3d(0,' + window.pageYOffset + 'px,0)';
+            trainElement.style.top = (window.pageYOffset - 150) + 'px';
+        });
+    });
 });
