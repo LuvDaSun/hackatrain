@@ -1,38 +1,90 @@
 body {
-    height: 5000px;
+    height: 3388px;
     background: linear-gradient(#f5941d, #eb1c23);
     color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1;
 }
-#spine {
+.spine {
     position: absolute;
     left: 50%;
     right: 50%;
     top: 0;
     bottom: 0;
 }
-#track {
+.track {
     position: absolute;
-    top: 200px;
-    left: -30px;
-    right: -30px;
-    height: 4000px;
-    border-radius: 30px 30px 0 0;
+    top: 875px;
+    left: -60px;
+    right: -60px;
+    height: 2000px;
+    border-radius: 60px 60px 0 0;
     overflow: hidden;
-    box-shadow: inset 0 10px 10px -10px #000000;
+    box-shadow: inset 0 4px 0px 0px #000000;
 }
-#train {
+.train {
     position: absolute;
-    top: -150px;
-    left: 15px;
-    right: 15px;
-    height: 150px;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    height: 400px;
     background-color: white;
 }
-#title {
+.title {
     position: absolute;
-    top: 20px;
-    left: -200px;
-    right: -200px;
+    top: 201px;
+    left: -240px;
+    right: -240px;
     text-align: center;
-    font-size: 48px;
+    font-size: 72px;
+    font-weight: bold;
+}
+.amsterdam {
+    position: absolute;
+    top: 699px;
+    left: -240px;
+    right: -240px;
+    width: 479.3px;
+    height: 49.6px;
+}
+.berlin {
+    position: absolute;
+    top: 2374px;
+    left: -240px;
+    right: -240px;
+    width: 480px;
+    height: 141.2px;
+}
+.wave {
+    position: absolute;
+    top: 925px;
+    left: -200px;
+    width: 45px;
+    height: 14.5px;
+}
+.arrow-down {
+    position: absolute;
+    top: 578px;
+    left: -4.45px;
+    right: -4.45px;
+    width: 8.9px;
+    height: 56px;
+}
+.ticket {
+    position: absolute;
+    top: 444px;
+    left: -240px;
+    right: -240px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.button {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 17px;
 }
