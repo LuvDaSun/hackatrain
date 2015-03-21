@@ -1,3 +1,5 @@
+/* jshint browser */
+
 /* jshint ignore: start */
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -5,7 +7,9 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-61026368-1', 'auto');
-ga('send', 'pageview');
-
 /* jshint ignore: end */
+
+if (window.globals.gaTrackingID) {
+    window.ga('create', window.globals.gaTrackingID, 'auto');
+    window.ga('send', 'pageview');
+}
