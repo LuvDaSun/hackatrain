@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
     window.addEventListener('scroll', function(e) {
         window.cancelAnimationFrame(animationFrame);
         animationFrame = window.requestAnimationFrame(function() {
-            trainElement.style.top = (window.pageYOffset - 1000) + 'px';
+            trainElement.style.top = (window.pageYOffset - 800) + 'px';
         });
     });
 });
