@@ -63,6 +63,14 @@ body {
     width: 480px;
     height: 141.2px;
 }
+#border {
+    position: absolute;
+    top: 1558px;
+    left: -658px;
+    right: -658px;
+    width: 1316px;
+    height: 94px;
+}
 .wave {
     position: absolute;
     width: 45px;

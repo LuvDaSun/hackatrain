@@ -37,8 +37,8 @@
     function animate() {
         window.cancelAnimationFrame(animationFrame);
         animationFrame = window.requestAnimationFrame(function() {
-            var scrollOffset = trackElement.offsetTop - window.innerHeight * 1 / 3;
-            var scrollHeight = trackElement.offsetHeight - window.innerHeight * 1 / 3;
+            var scrollOffset = trackElement.offsetTop - window.innerHeight * 1 / 4;
+            var scrollHeight = trackElement.offsetHeight - window.innerHeight * 2 / 4;
             var top;
 
             if (window.pageYOffset < scrollOffset) {
