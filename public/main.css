@@ -22,6 +22,14 @@ body {
     overflow: hidden;
     box-shadow: inset 0 4px 0px 0px #000000;
 }
+#rails {
+    position: absolute;
+    top: 0;
+    left: 45.7px;
+    right: 45.7px;
+    width: 28.6px;
+    height: 1478.1px;
+}
 #train {
     position: absolute;
     top: 0;
