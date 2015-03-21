@@ -1,25 +1,44 @@
 /* jshint browser */
 
 
+(function() {
 
-window.addEventListener('load', function() {
-    var trackElement = document.getElementById('track');
-    var railsElement = document.getElementById('rails');
-    var trainElement = document.getElementById('train');
-    var trainRange = railsElement.offsetHeight;
-    var trainOffset = 0 - trainElement.offsetHeight;
+    window.addEventListener('load', window_load);
 
-    window.addEventListener('scroll', move);
-    window.addEventListener('resize', move);
-    move();
+    var trackElement;
+    var railsElement;
+    var trainElement;
+    var trainRange;
+    var trainOffset;
 
     var animationFrame;
 
-    function move() {
+    function window_load() {
+        trackElement = document.getElementById('track');
+        railsElement = document.getElementById('rails');
+        trainElement = document.getElementById('train');
+        trainRange = railsElement.offsetHeight;
+        trainOffset = 0 - trainElement.offsetHeight;
+
+        animate();
+
+        window.addEventListener('scroll', window_scroll);
+        window.addEventListener('resize', window_resize);
+    }
+
+    function window_scroll() {
+        animate();
+    }
+
+    function window_resize() {
+        animate();
+    }
+
+    function animate() {
         window.cancelAnimationFrame(animationFrame);
         animationFrame = window.requestAnimationFrame(function() {
-            var scrollOffset = trackElement.offsetTop - window.innerHeight / 2;
-            var scrollHeight = trackElement.offsetHeight;
+            var scrollOffset = trackElement.offsetTop - window.innerHeight * 1 / 3;
+            var scrollHeight = trackElement.offsetHeight - window.innerHeight * 1 / 3;
             var top;
 
             if (window.pageYOffset < scrollOffset) {
@@ -45,4 +64,5 @@ window.addEventListener('load', function() {
         });
     }
 
-});
+
+})();
