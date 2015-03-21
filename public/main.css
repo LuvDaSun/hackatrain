@@ -64,6 +64,46 @@ body {
     top: 925px;
     left: -200px;
 }
+#wave2 {
+    top: 925px;
+    left: 200px;
+}
+#wave3 {
+    top: 925px;
+    right: 200px;
+}
+#wave4 {
+    top: 1125px;
+    left: 200px;
+}
+#wave5 {
+    top: 1125px;
+    right: 200px;
+}
+#wave6 {
+    top: 925px;
+    right: 200px;
+}
+#wave7 {
+    top: 925px;
+    right: 200px;
+}
+#wave8 {
+    top: 925px;
+    right: 200px;
+}
+#wave9 {
+    top: 925px;
+    right: 200px;
+}
+#wave10 {
+    top: 925px;
+    right: 200px;
+}
+#wave11 {
+    top: 925px;
+    right: 200px;
+}
 #arrow-down {
     position: absolute;
     top: 578px;
@@ -108,18 +148,18 @@ body {
     top: 444px;
 }
 #text2 {
-    left: 5px;
+    right: 5px;
     top: 444px;
 }
 #text3 {
     left: 5px;
-    top: 444px;
+    top: 1444px;
 }
 #text4 {
-    left: 5px;
-    top: 444px;
+    right: 5px;
+    top: 1444px;
 }
 #text5 {
     left: 5px;
-    top: 444px;
+    top: 1644px;
 }
