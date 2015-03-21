@@ -4,6 +4,9 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
+small {
+    font-size: 75%;
+}
 #spine {
     position: absolute;
     left: 50%;
@@ -47,21 +50,41 @@ body {
     font-size: 72px;
     font-weight: bold;
 }
-#amsterdam {
+#amsterdam-skyline {
     position: absolute;
-    top: 699px;
     left: -240px;
     right: -240px;
+    top: 699px;
     width: 479.3px;
     height: 49.6px;
 }
-#berlin {
+#amsterdam-text {
     position: absolute;
-    top: 2374px;
     left: -240px;
     right: -240px;
+    top: 795px;
+    width: 480px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+#berlin-skyline {
+    position: absolute;
+    left: -240px;
+    right: -240px;
+    top: 2374px;
     width: 480px;
     height: 141.2px;
+}
+#berlin-text {
+    position: absolute;
+    left: -240px;
+    right: -240px;
+    top: 2539px;
+    width: 480px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 #border {
     position: absolute;
