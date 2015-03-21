@@ -1,3 +1,5 @@
+/* jshint browser */
+
 window.addEventListener('load', function() {
     var slice = Array.prototype.slice;
     var trainElements = slice.apply(document.getElementsByClassName('train'));
