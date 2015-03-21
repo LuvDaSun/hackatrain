@@ -25,10 +25,10 @@ body {
 #train {
     position: absolute;
     top: 0;
-    left: 50px;
-    right: 50px;
-    height: 400px;
-    background-color: white;
+    left: 41.5px;
+    right: 41.5px;
+    width: 37px;
+    height: 415.7px;
 }
 #title {
     position: absolute;
