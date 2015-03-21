@@ -1,4 +1,4 @@
-/* jshint browser */
+/* jshint browser: true */
 
 
 (function() {
