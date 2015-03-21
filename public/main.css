@@ -5,14 +5,14 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1;
 }
-.spine {
+#spine {
     position: absolute;
     left: 50%;
     right: 50%;
     top: 0;
     bottom: 0;
 }
-.track {
+#track {
     position: absolute;
     top: 875px;
     left: -60px;
@@ -22,7 +22,7 @@ body {
     overflow: hidden;
     box-shadow: inset 0 4px 0px 0px #000000;
 }
-.train {
+#train {
     position: absolute;
     top: 0;
     left: 50px;
@@ -30,7 +30,7 @@ body {
     height: 400px;
     background-color: white;
 }
-.title {
+#title {
     position: absolute;
     top: 201px;
     left: -240px;
@@ -39,7 +39,7 @@ body {
     font-size: 72px;
     font-weight: bold;
 }
-.amsterdam {
+#amsterdam {
     position: absolute;
     top: 699px;
     left: -240px;
@@ -47,7 +47,7 @@ body {
     width: 479.3px;
     height: 49.6px;
 }
-.berlin {
+#berlin {
     position: absolute;
     top: 2374px;
     left: -240px;
@@ -57,12 +57,14 @@ body {
 }
 .wave {
     position: absolute;
-    top: 925px;
-    left: -200px;
     width: 45px;
     height: 14.5px;
 }
-.arrow-down {
+#wave1 {
+    top: 925px;
+    left: -200px;
+}
+#arrow-down {
     position: absolute;
     top: 578px;
     left: -4.45px;
@@ -72,12 +74,17 @@ body {
 }
 .ticket {
     position: absolute;
-    top: 444px;
-    left: -240px;
-    right: -240px;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+    left: -240px;
+    right: -240px;
+}
+#ticket1 {
+    top: 444px;
+}
+#ticket2 {
+    top: 1500px;
 }
 .button {
     display: inline-block;
@@ -87,4 +94,32 @@ body {
     border: 2px solid white;
     border-radius: 2px;
     padding: 17px;
+}
+.text {
+    display: block;
+    position: absolute;
+    width: 140px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+}
+#text1 {
+    left: 5px;
+    top: 444px;
+}
+#text2 {
+    left: 5px;
+    top: 444px;
+}
+#text3 {
+    left: 5px;
+    top: 444px;
+}
+#text4 {
+    left: 5px;
+    top: 444px;
+}
+#text5 {
+    left: 5px;
+    top: 444px;
 }
