@@ -68,48 +68,48 @@ body {
     height: 14.5px;
 }
 #wave1 {
+    right: 137px;
     top: 925px;
-    left: -200px;
 }
 #wave2 {
-    top: 925px;
-    left: 200px;
+    right: 381px;
+    top: 1025px;
 }
 #wave3 {
-    top: 925px;
-    right: 200px;
+    right: 97px;
+    top: 1121px;
 }
 #wave4 {
-    top: 1125px;
-    left: 200px;
+    right: 282px;
+    top: 1173px;
 }
 #wave5 {
-    top: 1125px;
-    right: 200px;
+    right: 435px;
+    top: 1422px;
 }
 #wave6 {
-    top: 925px;
-    right: 200px;
+    right: 244px;
+    top: 1511px;
 }
 #wave7 {
-    top: 925px;
-    right: 200px;
+    left: 150px;
+    top: 958px;
 }
 #wave8 {
-    top: 925px;
-    right: 200px;
+    left: 437px;
+    top: 1019px;
 }
 #wave9 {
-    top: 925px;
-    right: 200px;
+    left: 123px;
+    top: 1317px;
 }
 #wave10 {
-    top: 925px;
-    right: 200px;
+    left: 377px;
+    top: 1392px;
 }
 #wave11 {
-    top: 925px;
-    right: 200px;
+    left: 218px;
+    top: 1485px;
 }
 #arrow-down {
     position: absolute;
