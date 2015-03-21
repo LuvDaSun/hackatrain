@@ -3,7 +3,6 @@ body {
     background: linear-gradient(#f5941d, #eb1c23);
     color: white;
     font-family: Arial, sans-serif;
-    line-height: 1;
 }
 #spine {
     position: absolute;
@@ -132,9 +131,10 @@ body {
     top: 444px;
 }
 #ticket2 {
-    top: 1500px;
+    top: 2657px;
 }
 .button {
+    line-height: 1;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -146,28 +146,28 @@ body {
 .text {
     display: block;
     position: absolute;
-    width: 140px;
+    width: 241px;
     text-align: justify;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }
 #text1 {
-    left: 5px;
-    top: 444px;
+    left: 160px;
+    top: 1064px;
 }
 #text2 {
-    right: 5px;
-    top: 444px;
+    right: 160px;
+    top: 1287px;
 }
 #text3 {
-    left: 5px;
-    top: 1444px;
+    left: 160px;
+    top: 1674px;
 }
 #text4 {
-    right: 5px;
-    top: 1444px;
+    right: 160px;
+    top: 1929px;
 }
 #text5 {
-    left: 5px;
-    top: 1644px;
+    left: 160px;
+    top: 2273px;
 }
