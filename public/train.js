@@ -1,6 +1,5 @@
 /* jshint browser: true */
 
-
 jQuery(function($) {
     var Modernizr = window.Modernizr;
     var $window = $(window);
