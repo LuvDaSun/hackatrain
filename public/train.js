@@ -11,18 +11,14 @@ jQuery(function($) {
     var trainRange = $rails.height();
     var trainHeight = $train.height();
     var trainOffset = 0 - trainHeight;
+    var transformPrefixed = Modernizr.prefixed('transform');
 
     var move = Modernizr.csstransforms && Modernizr.csstransforms3d ? function(top) {
         if (top > trainHeight) {
-            $train.css({
-                transform: 'translate3d(0,' + (trainOffset + top) + 'px,0)',
-            });
+            $train.css(transformPrefixed, 'translate3d(0,' + (trainOffset + top) + 'px,0)');
         }
         else {
-            $train.css({
-                transform: 'translate(0,' + (trainOffset + top) + 'px)',
-            });
-
+            $train.css(transformPrefixed, 'translate(0,' + (trainOffset + top) + 'px)');
         }
     } : function(top) {
         $train.css({
