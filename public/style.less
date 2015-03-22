@@ -8,6 +8,10 @@ body {
     padding: 0;
     margin: 0;
 }
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
 small {
     font-size: 75%;
 }
@@ -178,6 +182,7 @@ small {
     font-weight: bold;
     left: -240px;
     right: -240px;
+    text-transform: uppercase;
 }
 #ticket1 {
     top: 444px;
@@ -188,10 +193,9 @@ small {
 .button {
     line-height: 1;
     display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
     color: inherit;
-    border: 2px solid white;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 2px;
     padding: 17px;
 }
@@ -222,4 +226,30 @@ small {
 #text5 {
     left: 160px;
     top: 2273px;
+}
+#menu {
+    position: absolute;
+    left: -100px;
+    top: 15px;
+    white-space: nowrap;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    a:hover {
+        color: white;
+    }
+    ul& {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        margin: 0 15px;
+        padding: 0;
+    }
+    .button {
+        padding: 7px 17px;
+    }
 }
