@@ -16,9 +16,7 @@ module.exports = {
 
     ],
     "styles": [
-        "public/*.less"
+        "public/*.less",
     ],
-
-    "assets": {},
 
 };
