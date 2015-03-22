@@ -22,18 +22,17 @@ p {
     font-size: 12px;
     text-align: justify;
 }
-#container1 {
+.container {
     display: block;
-    padding: relative;
+    position: relative;
     width: 100%;
+}
+#container1 {
     height: 3388px;
     background: linear-gradient(#f5941d, #eb1c23);
     color: white;
 }
 #container2 {
-    display: block;
-    padding: relative;
-    width: 100%;
     height: 979px;
     background: white;
     color: black;
@@ -261,7 +260,7 @@ p {
         margin: -9px 0;
     }
 }
-#logo-by-whyte {
+#logo-whyte {
     position: absolute;
     width: 96.9px;
     height: 25px;
@@ -293,6 +292,8 @@ p {
     width: 320px;
     .logo {
         display: inline-block;
+        line-height: 48px;
+        height: 48px;
     }
 }
 #info1 {
@@ -306,8 +307,27 @@ p {
 #info2 {
     left: 100px;
     top: 2843px;
+}
+.sponsor {
+    position: absolute;
+    text-align: center;
+    width: 241px;
     .logo {
-        width: 150.4px;
-        height: 44.2px;
+        display: block;
+        line-height: 120px;
+        height: 120px;
     }
+}
+#sponsor1 {
+    left: -438px;
+    top: 120px;
+}
+#sponsor2 {
+    left: -120.5px;
+    right: -120.5px;
+    top: 120px;
+}
+#sponsor3 {
+    right: -438px;
+    top: 120px;
 }
