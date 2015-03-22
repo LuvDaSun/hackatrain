@@ -11,6 +11,7 @@ module.exports = {
 
     "scripts": [
 
+        "bower_components/jquery/dist/jquery.js",
         "public/main.js",
         "public/ga.js",
 
