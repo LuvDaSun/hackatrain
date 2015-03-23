@@ -1,7 +1,6 @@
 /* jshint node: true */
 
-var when = require('when');
-var when_node = require('when/node');
+var Q = require('q');
 var express = require('express');
 var jsdom = require('jsdom');
 
@@ -10,13 +9,13 @@ var args = require('./args');
 var vars = require('./vars');
 
 var io = require('./io');
-var when_jsdom = when_node.lift(jsdom.env);
+var when_jsdom = Q.nfbind(jsdom.env);
 
 var app = express();
 
 app.get('/', function(req, res, next) {
 
-    when([
+    Q.all([
         io.find(config.scripts),
         io.find(config.styles),
         io.readText([vars.srcRoot, 'public', 'main.html']).then(when_jsdom)
@@ -71,7 +70,7 @@ app.get('/', function(req, res, next) {
 app.use('/public', express.static(vars.srcRoot + '/public'));
 app.use('/bower_components', express.static(vars.srcRoot + '/bower_components'));
 
-module.exports = when.promise(function(resolve, reject) {
+module.exports = Q.promise(function(resolve, reject) {
     var server = app.listen(args.port, function() {
         var host = server.address().address;
         var port = server.address().port;

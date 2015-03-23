@@ -1,7 +1,6 @@
 /* jshint node: true */
 
-var when = require('when');
-var when_node = require('when/node');
+var Q = require('q');
 var jsdom = require('jsdom');
 
 var config = require('./config');
@@ -9,7 +8,7 @@ var args = require('./args');
 var vars = require('./vars');
 
 var io = require('./io');
-var when_jsdom = when_node.lift(jsdom.env);
+var when_jsdom = Q.nfbind(jsdom.env);
 
 
 module.exports = io.readText([vars.srcRoot, 'public', 'main.html']).then(when_jsdom).then(function(window) {

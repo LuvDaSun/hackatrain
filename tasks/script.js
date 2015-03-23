@@ -1,6 +1,6 @@
 /* jshint node: true */
 
-var when = require('when');
+var Q = require('q');
 var UglifyJS = require("uglify-js");
 var vars = require('./vars');
 var io = require('./io');
@@ -19,7 +19,7 @@ module.exports = io.find(config.scripts, {
         sourceMapIncludeSources: true
     });
 
-    return when.all([
+    return Q.all([
         io.writeText([vars.dstRoot, outputFile], output.code),
         io.writeText([vars.dstRoot, outputMapFile], output.map)
     ]);

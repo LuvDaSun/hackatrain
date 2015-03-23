@@ -1,6 +1,6 @@
 /* jshint node: true */
 
-var when = require('when');
+var Q = require('q');
 var less = require('less');
 var vars = require('./vars');
 var io = require('./io');
@@ -24,7 +24,7 @@ module.exports = io.find(config.styles, {
             sourceMapBasepath: vars.srcRoot
         }
     }).then(function(output) {
-        return when.all([
+        return Q.all([
             io.writeText([vars.dstRoot, outputFile], output.css),
             io.writeText([vars.dstRoot, outputMapFile], output.map)
         ]);

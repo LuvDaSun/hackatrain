@@ -1,6 +1,6 @@
 /* jshint node: true */
 
-var when = require('when');
+var Q = require('q');
 var express = require('express');
 
 var args = require('./args');
@@ -12,7 +12,7 @@ app.use('/', express.static(vars.dstRoot));
 
 module.exports = require('./dist').then(function(dist) {
 
-    return when.promise(function(resolve, reject) {
+    return Q.promise(function(resolve, reject) {
         var server = app.listen(args.port, function() {
             var host = server.address().address;
             var port = server.address().port;
