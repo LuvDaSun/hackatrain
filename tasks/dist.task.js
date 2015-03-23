@@ -1,4 +1,10 @@
 /* jshint node: true */
 
-module.exports.task = function(script, style, html, robots) {
-};
+var Q = require('q');
+
+module.exports = Q.all([
+    require('./script.task'),
+    require('./style.task'),
+    require('./html.task'),
+    require('./robots.task'),
+]);
