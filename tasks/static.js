@@ -3,7 +3,6 @@
 var when = require('when');
 var express = require('express');
 
-var config = require('./config');
 var args = require('./args');
 var vars = require('./vars');
 
@@ -11,7 +10,7 @@ var app = express();
 
 app.use('/', express.static(vars.dstRoot));
 
-module.exports = require('./dist.task').then(function(dist) {
+module.exports = require('./dist').then(function(dist) {
 
     return when.promise(function(resolve, reject) {
         var server = app.listen(args.port, function() {

@@ -19,7 +19,7 @@ var when_listObjects = when_node.lift(s3bucket.listObjects.bind(s3bucket));
 var when_deleteObjects = when_node.lift(s3bucket.deleteObjects.bind(s3bucket));
 var when_putObject = when_node.lift(s3bucket.putObject.bind(s3bucket));
 
-module.exports = require('./dist.task').then(function(dist) {
+module.exports = require('./dist').then(function(dist) {
 
     return when_listObjects().then(function(objects) {
         if (objects.Contents.length === 0) return;

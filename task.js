@@ -9,6 +9,6 @@ Q.longStackSupport = true;
 
 Q.all(
     tasks.map(function(task) {
-        return require('./tasks/' + task + '.task');
+        return require('./tasks/' + task + '');
     })
 ).done();
