@@ -1,6 +1,5 @@
 /* jshint node: true */
 
-var path = require('path');
 var vars = require('./vars');
 var io = require('./io');
 
