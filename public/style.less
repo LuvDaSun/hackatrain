@@ -1,3 +1,4 @@
+@import "variables.less";
 @import "elements.less";
 html {
     padding: 0;
@@ -10,6 +11,7 @@ body {
     margin: 0;
 }
 a {
+    transition: color 200ms;
     color: inherit;
     text-decoration: inherit;
 }
@@ -30,13 +32,13 @@ p {
 }
 #container1 {
     height: 3388px;
-    .gradient(#FB934E, #F43A4F, #FB934E);
-    color: white;
+    .gradient(@gradient-from, @gradient-to, @gradient-from);
+    color: @color;
 }
 #container2 {
     height: 979px;
-    background: white;
-    color: black;
+    background: @color;
+    color: @inverse-color;
 }
 .spine {
     position: absolute;
