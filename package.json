@@ -12,7 +12,7 @@
     "url": "git@github.com:LuvDaSun/hackatrain.git"
   },
   "author": "",
-  "license": "BSD-2-Clause",
+  "license": "WTFPL",
   "dependencies": {
     "express": "~4.12.2",
     "less": "~2.4.0",
