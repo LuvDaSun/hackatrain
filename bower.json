@@ -4,7 +4,7 @@
   "authors": [
     "Elmer Bulthuis <elmerbulthuis@gmail.com>"
   ],
-  "license": "MIT",
+  "license": "WTFPL",
   "ignore": [
     "**/.*",
     "node_modules",
