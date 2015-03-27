@@ -1,6 +1,6 @@
 {
   "name": "hackatrain",
-  "version": "0.0.0",
+  "private": true,
   "authors": [
     "Elmer Bulthuis <elmerbulthuis@gmail.com>"
   ],

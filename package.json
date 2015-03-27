@@ -1,7 +1,7 @@
 {
   "name": "hackatrain",
-  "version": "0.0.0",
-  "description": "",
+  "private": true,
+  "description": "hackatrain.nl website",
   "main": "src/main.js",
   "scripts": {
     "start": "node task debug",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:luvdasun/hackatrain.git"
+    "url": "git@github.com:LuvDaSun/hackatrain.git"
   },
   "author": "",
   "license": "BSD-2-Clause",
