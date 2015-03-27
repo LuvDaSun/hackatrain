@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 a {
-    transition: color 200ms;
+    transition: all 200ms;
     color: inherit;
     text-decoration: inherit;
 }
@@ -269,21 +269,24 @@ p {
         margin: -9px 0;
     }
 }
-#logo-whyte {
+a#logo-whyte {
     position: absolute;
-    width: 96.9px;
-    height: 25px;
     left: -480px;
     top: 18px;
-    color: black;
+    &:hover {
+        color: white;
+        fill: white;
+    }
 }
-#logo-tech-openair {
+a#logo-tech-openair {
     position: absolute;
-    width: 96.9px;
-    height: 25px;
     left: -318px;
     top: 18px;
-    color: black;
+    &:hover {
+        color: white;
+        stroke: white;
+        fill: white;
+    }
 }
 #logo-and {
     position: absolute;
