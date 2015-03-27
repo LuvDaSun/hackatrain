@@ -21,6 +21,12 @@ small {
 h1 {
     font-size: 24px;
 }
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
 p {
     font-size: 12px;
     text-align: justify;
@@ -40,12 +46,34 @@ p {
     background: @color;
     color: @inverse-color;
 }
+#container3 {
+    background: green;
+    color: black;
+}
 .spine {
     position: absolute;
     left: 50%;
     right: 50%;
     top: 0;
     bottom: 0;
+}
+.columns {
+    width: 800px;
+    margin: 0 auto;
+    white-space: none;
+}
+.columns .column {
+    vertical-align: top;
+}
+.columns.two .column {
+    display: inline-block;
+    width: 380px;
+}
+.columns h1,
+.columns h2,
+.columns h3,
+.columns p {
+    padding: 10px;
 }
 #track {
     position: absolute;

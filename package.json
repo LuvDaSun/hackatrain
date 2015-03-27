@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "start": "node ."
+    "start": "node task debug",
+    "dist": "node task dist"
   },
   "repository": {
     "type": "git",
