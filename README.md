@@ -8,16 +8,16 @@ We invite you to hack the hackatrain website. See a typo, help us fix it. Want a
 
 first, install global dependencies
 
-  npm install bower --global
+    npm install bower --global
 
 then install local dependencies
 
-  npm install
-  bower install
+    npm install
+    bower install
   
 now start the site with
 
-  npm start
+    npm start
 
 ## hacking
 
