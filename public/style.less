@@ -45,13 +45,14 @@ a img {
     color: @color;
 }
 #container2 {
-    height: 979px;
     background: @color;
     color: @inverse-color;
+    padding: 120px 0;
 }
 #container3 {
     .gradient(@gradient-from, @gradient-to, @gradient-from);
     color: @color;
+    padding: 120px 0;
 }
 .spine {
     position: absolute;
@@ -61,23 +62,47 @@ a img {
     bottom: 0;
 }
 .columns {
-    width: 800px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0;
     white-space: none;
+    .column {
+        vertical-align: top;
+        display: inline-block;
+        padding: 0 20px;
+        .logo {
+            display: block;
+            line-height: 100px;
+            height: 100px;
+            padding: 0 20px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
 }
-.columns .column {
-    vertical-align: top;
+.columns.one {
+    width: 880px;
+    .column {
+        width: 840px;
+    }
 }
-.columns.two .column {
-    display: inline-block;
-    width: 380px;
+.columns.two {
+    width: 880px;
+    .column {
+        width: 380px;
+    }
 }
-.columns h1,
-.columns h2,
-.columns h3,
-.columns p {
-    padding: 10px;
+.columns.three {
+    width: 840px;
+    .column {
+        width: 240px;
+    }
+}
+.partner {
+    position: absolute;
+    text-align: center;
+    width: 241px;
 }
 #track {
     position: absolute;
@@ -351,32 +376,4 @@ a#logo-tech-openair {
 #info2 {
     left: 100px;
     top: 3043px;
-}
-.partner {
-    position: absolute;
-    text-align: center;
-    width: 241px;
-    .logo {
-        display: block;
-        line-height: 100px;
-        height: 100px;
-        padding: 10px;
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }
-}
-#partner1 {
-    left: -438px;
-    top: 120px;
-}
-#partner2 {
-    left: -120.5px;
-    right: -120.5px;
-    top: 120px;
-}
-#partner3 {
-    right: -438px;
-    top: 120px;
 }
