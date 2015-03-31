@@ -6,7 +6,7 @@ We invite you to hack the hackatrain website. See a typo, help us fix it. Have a
 
 ## installation
 
-first, install global dependencies
+first, make sure node.js (https://nodejs.org/) is installed, then install global dependencies.
 
     npm install bower --global
 
