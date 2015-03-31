@@ -4,8 +4,8 @@
   "description": "hackatrain.nl website",
   "main": "src/main.js",
   "scripts": {
-    "start": "node task debug",
-    "dist": "node task dist"
+    "start": "node --harmony task debug",
+    "dist": "node --harmony task dist"
   },
   "repository": {
     "type": "git",
