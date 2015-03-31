@@ -26,7 +26,7 @@ Frist read this:
  - https://help.github.com/articles/using-pull-requests/
 
 Start by forking the hackatrain repository, check it out and hack away! If you have something that you are proud of make a
-pull reqeust and, if we like it, your hack will be in the live site a couple of days later!
+pull request and, if we like it, your hack will be in the live site a couple of days later!
 
 
 
