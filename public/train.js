@@ -1,7 +1,6 @@
 /* jshint browser: true */
 
 jQuery(function($) {
-    var Modernizr = window.Modernizr;
     var $window = $(window);
     var $track = $('#track');
     var $rails = $('#rails');
@@ -10,18 +9,10 @@ jQuery(function($) {
     var trainRange = $rails.height();
     var trainHeight = $train.height();
     var trainOffset = 0 - trainHeight;
-    var transformPrefixed = Modernizr.prefixed('transform');
 
-    var move = Modernizr.csstransforms && Modernizr.csstransforms3d ? function(top) {
-        if (top > trainHeight) {
-            $train.css(transformPrefixed, 'translate3d(0,' + (trainOffset + top) + 'px,0)');
-        }
-        else {
-            $train.css(transformPrefixed, 'translate(0,' + (trainOffset + top) + 'px)');
-        }
-    } : function(top) {
-        $train.css({
-            top: (trainOffset + top) + 'px',
+    var move = function(top) {
+        $.doTimeout('scroll', 400 , function() {
+            $train.animate({'top': trainOffset+top+'px'}, 500, 'easeInOutCubic');
         });
     };
 
