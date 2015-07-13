@@ -29,4 +29,3 @@ Start by forking the hackatrain repository, check it out and hack away! If you h
 pull request and, if we like it, your hack will be in the live site a couple of days later!
 
 
-
